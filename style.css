@@ -12,7 +12,6 @@ body {
 }
 
 .grid {
-  background: transparent;
   display: grid;
   grid-template: repeat(3, 200px) / repeat(4, 200px);
   width: 800px;
@@ -21,7 +20,6 @@ body {
 }
 
 .card {
-  background-color: transparent;
   perspective: 1000px;
   margin: 5px;
 }
@@ -48,7 +46,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 2px solid black;
-  backface-visibility: hidden;
+  z-index: 1;
 }
 .front img {
   width: 120px;
