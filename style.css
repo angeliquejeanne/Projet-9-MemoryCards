@@ -37,8 +37,9 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  backfront-visibility: hidden;
-  -webkit-backfront-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 .front {
   background: snow;
@@ -47,6 +48,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 2px solid black;
+  backface-visibility: hidden;
 }
 .front img {
   width: 120px;
@@ -59,7 +61,6 @@ body {
   font-size: 80px;
   border: 2px solid snow;
 }
-
 .active {
   transform: rotateY(180deg)
 }
